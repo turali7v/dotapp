@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CX97coj9+gdzEDyN3VduYKWFMXNMldvkWOCUsVwTetjxu6iUPV3uFoETQXvP5htXhUzteAUSro9zZfTAeUhZBw==",
+  "success": true,
+  "projectFilePath": "/app/HelloWorldApp/HelloWorldApp.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/root/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/root/.nuget/packages/system.text.json/8.0.4/system.text.json.8.0.4.nupkg.sha512",
+    "/root/.nuget/packages/vaultsharp/1.17.5.1/vaultsharp.1.17.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

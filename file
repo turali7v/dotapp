@@ -1,0 +1,152 @@
+vault kv put secret/hello secret="Hello World, my secret is supersecret!"
+   1 export VAULT_ADDR='http://127.0.0.1:8200'
+   2 vault login
+   3 vault kv put secret/hello secret="Hello World, my secret is supersecret!"
+   4 vault kv get secret/hello
+   5 cat /etc/hosts
+   6 vault kv get secret/hello
+   7 vault secrets list
+   8 vault auth enable approle
+   9 vault write auth/approle/role/my-dotnet-app \
+  10     secret_id_ttl=60m \
+  11     token_ttl=60m \
+  12     token_max_ttl=120m \
+  13     policies=my-dotnet-app-policy
+  14 cd ap
+  15 cd /app
+  16 ls
+  17 cd home/vault/
+  18 vi my-dotnet-app-policy.hcl
+  19 vault policy write my-dotnet-app /path/to/my-dotnet-app-policy.hcl
+  20 vault policy write my-dotnet-app my-dotnet-app-policy.hcl
+  21 vault read auth/approle/role/my-dotnet-app/role-id
+  22 vault write -f auth/approle/role/my-dotnet-app/secret-id
+  23 cat my-dotnet-app-policy.hcl 
+  24 vault policy write my-dotnet-app my-dotnet-app-policy.hcl
+  25 write auth/approle/role/my-dotnet-app \
+  26     token_policies="my-dotnet-app-policy"
+  27 vault write auth/approle/role/my-dotnet-app \
+  28     token_policies="my-dotnet-app-policy"
+  29 vault write -f auth/approle/role/my-dotnet-app/secret-id
+  30 vault write auth/approle/login \
+  31     role_id= \
+  32 secret_id=
+  33 curl --header "X-Vault-Token:  \
+  34 http://172.17.0.2:8200/v1/secret/data/hello
+  35 curl --header "X-Vault-Token:  http://172.17.0.2:8200/v1/secret/data/hello
+  37 vault write auth/approle/role/my-dotnet-app token_policies="my-dotnet-app-policy"
+  38 vault write -f auth/approle/role/my-dotnet-app/secret-id
+  39 vault write auth/approle/login role_id="" secret_id=""
+  40 vault token lookup mZsdDc
+  41 ault policy read my-dotnet-app-policy
+  42 vault policy read my-dotnet-app-policy
+  43 vault policy read default/my-dotnet-app-policy
+  44 vault policy read default my-dotnet-app-policy
+  45 vault policy read "default my-dotnet-app-policy"
+  46 vault policy read default my-dotnet-app-policy
+  47 vault policy read "default my-dotnet-app-policy"
+  48 ls
+  49 cat my-dotnet-app-policy.hcl 
+  50 vault policy write my-dotnet-app-policy my-dotnet-app-policy.hcl 
+  51 vault write auth/approle/role/my-dotnet-app token_policies="my-dotnet-app-policy"
+  52 vault write -f auth/approle/role/my-dotnet-app/secret-id
+  53 vault write auth/approle/login role_id="" secret_id=""
+  54 curl --header "X-Vault-Token: token" http://172.17.0.2:8200/v1/secret/data/hello
+  55 history
+
+
+vault write auth/approle/role/my-dotnet-app token_policies="my-dotnet-app-policy"
+vault write -f auth/approle/role/my-dotnet-app/secret-id
+
+vault write auth/approle/login role_id="" secret_id="5f"
+
+hvs.
+
+curl --header "X-Vault-Token: tok" http://172.17.0.2:8200/v1/secret/data/hello
+
+
+
+  1  ls
+    2  cd app/
+    3  ls
+    4  cd HelloWorldApp/
+    5  ls
+    6  dotnet run
+    7  dotnet run
+    8  cat /etc/os-release 
+    9  apt update
+   10  curl http://127.0.0.1:8200/v1/sys/health
+   11  curl http://172.17.0.2:8200/v1/sys/health
+   12  dotnet run
+   13  telnet
+   14  apt install telnet
+   15  telnet localhost 8200
+   16  telnet 127.17.0.2 8200
+   17  telnet 172.17.0.2 8200
+   18  telnet 172.17.0.2 8200
+   19  dotnet run
+   20  dotnet run
+   21  dotnet run
+   22  dotnet run
+   23  dotnet run
+   24  dotnet run
+   25  dotnet run
+   26  dotnet run
+   27  dotnet run
+   28  dotnet run
+   29  dotnet run
+   30  cd ..
+   31  ls
+   32  rm -rf HelloWorldApp/
+   33  ls
+   34  dotnet new webapp -o HelloWorldApp
+   35  cd HelloWorldApp/
+   36  ls
+   37  dotnet run
+   38  dotnet run
+   39  dotnet run
+   40  dotnet run
+   41  cd ..
+   42  ls
+   43  rm -rf HelloWorldApp/
+   44  dotnet new web -n HelloWorldApp
+   45  dotnet run
+   46  ls
+   47  cd HelloWorldApp/
+   48  dotnet run
+   49  dotnet run
+   50  dotnet run
+   51  dotnet run
+   52  dotnet run
+   53  dotnet add package VaultSharp
+   54  dotnet run
+   55  telnet localhost 8200
+   56  telnet 172.17.0.2 8200
+   57  cat /etc/hosts
+   58  dotnet run
+   59  dotnet run
+   60  curl --header "X-Vault-Token: root" http://localhost:8200/v1/secret/data/hello
+   61  curl --header "X-Vault-Token: root" http://172.17.0.2:8200/v1/secret/data/hello
+   62  curl --header "X-Vault-Token: root" http://172.17.0.2:8200/v1/secret/data/hello
+   63  dotnet run
+   64  curl --header "X-Vault-Token: root"      http://localhost:8200/v1/secret/data/hello
+   65  curl --header "X-Vault-Token: root"      http://172.17.0.2:8200/v1/secret/data/hello
+   66  dotnet run
+   67  dotnet run
+   68  dotnet run
+   69  dotnet run
+   70  dotnet run
+   71  dotnet run
+
+   74  curl --header "X-Vault-Token: token" http://localhost:8200/v1/secret/data/hello
+   75  curl --header "X-Vault-Token: tokwn" http://172.17.0.2:8200/v1/secret/data/hello
+   76  curl --header "X-Vault-Token: hjk" http://172.17.0.2:8200/v1/secret/data/hello
+   77  dotnet run
+
+
+
+/home/vault # cat my-dotnet-app-policy.hcl 
+path "secret/data/hello" {
+    capabilities = ["read"]
+}
+
